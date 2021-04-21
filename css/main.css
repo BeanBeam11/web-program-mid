@@ -1,3 +1,7 @@
+.opacity-5:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
 /* nav */
 .nav1{
     background-color: #202023;
@@ -7,8 +11,14 @@
     height: 50px;
     width: 110px;
 }
+.icon-flickr_logo_dots:hover{
+    opacity: 0.5;
+}
 .nav1 .navbar-nav .nav-link{
     color: #fff;
+}
+.nav1 .navbar-nav .nav-link:hover{
+    opacity: 0.5;
 }
 .nav1 .fa-search{
     position: absolute;
@@ -54,11 +64,16 @@ header .row{
 }
 header .img-user{
     width: 100px;
-    margin: 0 15px 14px 0;
+    margin: 0 15px 0 0;
 }
 header .name{
     font-size: 36px;
+    margin-left: 20px;
 }
+header .user-info{
+    margin-left: 20px;
+}
+
 /* aside */
 aside{
     border-bottom: 1px solid #dcdcdc;
@@ -72,6 +87,9 @@ aside .nav-item .nav-link{
     color: #000;
     height: 50px;
     padding: 12px 20px;
+}
+aside .nav-item .nav-link:hover{
+    font-weight: 700;
 }
 aside .nav-item .active{
     border-bottom: 3px solid #0090DC;
@@ -208,8 +226,14 @@ footer .nav2{
 footer .nav2 .nav-link{
     color: #fff;
 }
+footer .nav2 .nav-link:hover{
+    opacity: 0.5;
+}
 footer .nav3 .nav-link{
     color: gray;
+}
+footer .nav3 .nav-link:hover{
+    color: #fff;
 }
 footer .fa{
     font-size: 23px;
