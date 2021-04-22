@@ -23,27 +23,20 @@ function readFromServer(){
             $('.img').toggleClass(img_NUM);
             // $('.' + img_NUM).css('background-image','url('+ data.imgurl +')');
             init(data);
-            
             $('.img').toggleClass(img_NUM);
             $('.' + img_NUM).css('background-image','url('+ data.imgurl +')');
         });
-        
     }
 }
 
 function init(data){
-	// var htmlCode = '<img src="'+data.imgurl+'">';
-	// $('body').append(htmlCode)
-    
+
     let tmp = $('#template01');
     let htmlCode = tmp.html(); //括號裡面沒放東西，是取內容出來
-
-    // $('.' + img_NUM).css('background-image','url('+ data.imgurl +')');
 
     htmlCode = htmlCode.replace('NAME_HERE',data.name);
     htmlCode = htmlCode.replace('PHOTONUM_HERE',data.photoNum);
     htmlCode = htmlCode.replace('VIEWNUM_HERE',data.viewNum);
     
     $('section .row').append(htmlCode);
-    
 }
