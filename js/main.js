@@ -1,12 +1,15 @@
 // let serverURL = './json/110819015.json';
 let serverURL = [
+    './json/110619049.json',
     './json/110719016.json',
     './json/110719018.json',
     './json/110719032.json',
     './json/110719033.json',
     './json/110719042.json',
+    './json/110819013.json',
     './json/110819015.json',
-    './json/110819023.json'
+    './json/110819023.json',
+    './json/110819042.json'
 ];
 let img_NUM = '';
 
