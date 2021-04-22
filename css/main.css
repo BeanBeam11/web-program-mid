@@ -133,10 +133,9 @@ section{
     height: 100%;
     background-size: cover;
     background-position: center center;
-    background-image: url(../img/img1.jpeg);
 }
-.img1{
-    background-image: url(../img/img1.jpeg);
+/* .img1{
+    /* background-image: url(../img/img1.jpeg);
 }
 .img2{
     background-image: url(../img/img2.jpeg);
@@ -194,7 +193,7 @@ section{
 }
 .img20{
     background-image: url(../img/img20.jpeg);
-}
+} */
 .info{
     position: absolute;
     width: 100%;
