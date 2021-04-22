@@ -82,6 +82,7 @@ aside{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 aside .nav-item .nav-link{
     color: #000;
@@ -134,66 +135,6 @@ section{
     background-size: cover;
     background-position: center center;
 }
-/* .img1{
-    /* background-image: url(../img/img1.jpeg);
-}
-.img2{
-    background-image: url(../img/img2.jpeg);
-}
-.img3{
-    background-image: url(../img/img3.jpeg);
-}
-.img4{
-    background-image: url(../img/img4.jpeg);
-}
-.img5{
-    background-image: url(../img/img5.jpeg);
-}
-.img6{
-    background-image: url(../img/img6.jpeg);
-}
-.img7{
-    background-image: url(../img/img7.jpeg);
-}
-.img8{
-    background-image: url(../img/img8.jpeg);
-}
-.img9{
-    background-image: url(../img/img9.jpeg);
-}
-.img10{
-    background-image: url(../img/img10.jpeg);
-}
-.img11{
-    background-image: url(../img/img11.jpeg);
-}
-.img12{
-    background-image: url(../img/img12.jpeg);
-}
-.img13{
-    background-image: url(../img/img13.jpeg);
-}
-.img14{
-    background-image: url(../img/img14.jpeg);
-}
-.img15{
-    background-image: url(../img/img15.jpeg);
-}
-.img16{
-    background-image: url(../img/img16.jpeg);
-}
-.img17{
-    background-image: url(../img/img17.jpeg);
-}
-.img18{
-    background-image: url(../img/img18.jpeg);
-}
-.img19{
-    background-image: url(../img/img19.jpeg);
-}
-.img20{
-    background-image: url(../img/img20.jpeg);
-} */
 .info{
     position: absolute;
     width: 100%;
@@ -237,4 +178,126 @@ footer .nav3 .nav-link:hover{
 }
 footer .fa{
     font-size: 23px;
+}
+/* album.html */
+.img-cover{
+    position: relative;
+    width: calc(100% - 10px);
+    height: 500px;
+    background-image: url('https://i1.wp.com/mrlifeday.com/wp-content/uploads/2020/12/03-taylor-swift-press-cr-Beth-Garrabrant-2020-billboard-1548-1607617377-compressed.jpg');
+    background-size: cover;
+    margin: 5px;
+    color: #fff;
+}
+.box-black{
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.box-black-1{
+    opacity: 0.3;
+}
+.album-name{
+    position: absolute;
+    width: 80%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 100px;
+    font-size: 72px;
+    text-align: center;
+}
+.album-info{
+    position: absolute;
+    width: 80%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 210px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.8;
+}
+.album-num{
+    position: absolute;
+    width: 80%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 250px;
+    font-size: 14px;
+    text-align: center;
+}
+.album-icon{
+    position: absolute;
+    width: 80%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 290px;
+    font-size: 16px;
+    text-align: center;
+}
+.album-autor-img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 340px;
+    font-size: 16px;
+    background-image: url('https://i1.wp.com/mrlifeday.com/wp-content/uploads/2020/12/03-taylor-swift-press-cr-Beth-Garrabrant-2020-billboard-1548-1607617377-compressed.jpg');
+    background-size: cover;
+}
+.album-author-name{
+    position: absolute;
+    width: 80%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 410px;
+    font-size: 14px;
+    text-align: center;
+}
+.img-photo{
+    position: relative;
+    height: 500px;
+    background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/taylor-swift-performs-onstage-during-opening-night-of-her-news-photo-1605596966.?crop=1xw:1xh;center,top&resize=480:*');
+    background-size: cover;
+    margin: 5px;
+}
+.photo-box{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 14px;
+}
+.photo-box:hover{
+    opacity: 1;
+}
+.photo-title{
+    position: absolute;
+    width: 80%;
+    margin-top: 440px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.photo-info{
+    position: absolute;
+    width: calc(100% - 20px);
+    margin-top: 465px;
+    margin-left: 10px;
+}
+.photo-author{
+    margin-right: 10px;
+}
+.photo-info .fa{
+    font-size: 14px;
+    margin-left: 10px;
 }
