@@ -11,7 +11,7 @@ let serverURL = [
     './json/110819023.json',
     './json/110819042.json'
 ];
-let img_NUM = '';
+
 
 $(document).ready(function() {
 	readFromServer();
@@ -20,26 +20,24 @@ $(document).ready(function() {
 function readFromServer(){
 	var parameter = {};
     for(let i=0; i<serverURL.length; i++){
-        $.get(serverURL[i], function(data) {
+        $.get(albumURL, function(data) {
             console.log(data);
-            img_NUM = 'img' + i;
-            $('.img').toggleClass(img_NUM);
-            // $('.' + img_NUM).css('background-image','url('+ data.imgurl +')');
             init(data);
-            $('.img').toggleClass(img_NUM);
-            $('.' + img_NUM).css('background-image','url('+ data.imgurl +')');
         });
     }
 }
 
 function init(data){
 
-    let tmp = $('#template01');
+    let tmp = $('#template02');
     let htmlCode = tmp.html(); //括號裡面沒放東西，是取內容出來
 
-    htmlCode = htmlCode.replace('NAME_HERE',data.name);
-    htmlCode = htmlCode.replace('PHOTONUM_HERE',data.photoNum);
-    htmlCode = htmlCode.replace('VIEWNUM_HERE',data.viewNum);
+    htmlCode = htmlCode.replace('ALBUM_NAME',data.name);
+    htmlCode = htmlCode.replace('ALBUM_INFO',data.info);
+    htmlCode = htmlCode.replace('ALBUM_PHOTO_NUM',data.photoNum + data.videoNum);
+    htmlCode = htmlCode.replace('ALBUM_VIEW_NUM',data.viewNum);
+    htmlCode = htmlCode.replace('ALBUM_AUTHOR_NAME',data.author);
+    $('.album-autor-img').css('background-image','url(' + data.authorImg + ')')
     
-    $('section .row').append(htmlCode);
+    $('.container').append(htmlCode);
 }
