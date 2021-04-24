@@ -35,10 +35,16 @@ function init(data){
     $('.album-autor-img').css('background-image','url('+ data[urlNUM].authorImg +')');
     $('.album-author-name').html(data[urlNUM].author);
 
-    for(let i =0; i < data.length; i++){
+    $('.img-photo').css('background-image','url('+ data[urlNUM].images[0].imgurl +')');
+    $('.photo-title').html(data[urlNUM].images[0].title);
+    $('.photo-author').html(data[urlNUM].images[0].author);
+    $('.photo-like-num').html('<i class="fa fa-star-o" aria-hidden="true"></i> ' + data[urlNUM].images[0].likeNum);
+    $('.photo-comment-num').html('<i class="fa fa-comment-o" aria-hidden="true"></i> ' + data[urlNUM].images[0].commentNum);
+
+    // for(let i =0; i < data.length; i++){
         
-        $('section .row').append(htmlCode);
-    }
+    //     $('section .row').append(htmlCode);
+    // }
 }
 
 function log(data){ //列印json陣列->檢查
