@@ -22,12 +22,18 @@ function init(data){
     let tmp = $('#template02');
     let htmlCode = tmp.html(); //括號裡面沒放東西，是取內容出來
 
-    for(let i =0; i < data.length; i++){
+    for(let i =0; i < data.length; i++){ 
         if( data[i].ID == urlID ){
             urlNUM = i;
         }
     }
+
     $('.img-cover').css('background-image','url('+ data[urlNUM].imgurl +')');
+    $('.album-name').html(data[urlNUM].name);
+    $('.album-info').html(data[urlNUM].info);
+    $('.album-num').html(data[urlNUM].photoNum + '張相片・' + data[urlNUM].viewNum + '次檢視');
+    $('.album-autor-img').css('background-image','url('+ data[urlNUM].authorImg +')');
+    $('.album-author-name').html(data[urlNUM].author);
 
     for(let i =0; i < data.length; i++){
         
