@@ -1,7 +1,5 @@
 let serverURL = '../json/all_data.json';
-let img_NUM = '';
-let box_NUM = '';
-let album_LINK ='';
+let album_link_NUM ='';
 let url ='';
 
 $(document).ready(function() {
@@ -23,20 +21,18 @@ function init(data){
     let htmlCode = tmp.html(); //括號裡面沒放東西，是取內容出來
 
     for(let i =0; i < data.length; i++){
-        img_NUM = 'img' + i;
-        box_NUM = 'box' + i;
-        $('.img').toggleClass(img_NUM);
-        $('.box').toggleClass(box_NUM);
+        album_link_NUM = 'album-link' + i;
+        $('.album-link').toggleClass(album_link_NUM);
 
         $('section .row').append(htmlCode);
 
-        $('.img').toggleClass(img_NUM);
-        $('.box').toggleClass(box_NUM);
-        $('.' + img_NUM).css('background-image','url('+ data[i].imgurl +')');
-        $('.' + box_NUM + ' .line1').html(data[i].name);
-        $('.' + box_NUM + ' .line2').html(data[i].photoNum + '張相片・' + data[i].viewNum + '次檢視');
+        $('.album-link').toggleClass(album_link_NUM);
 
-        console.log(data[i].name);
+        $('.' + album_link_NUM + ' .img').css('background-image','url('+ data[i].imgurl +')');
+        $('.' + album_link_NUM + ' .line1').html(data[i].name);
+        $('.' + album_link_NUM + ' .line2').html(data[i].photoNum + '張相片・' + data[i].viewNum + '次檢視');
+
+        $('.' + album_link_NUM).attr('href','./album.html?' + data[i].ID);
     }
 }
 
