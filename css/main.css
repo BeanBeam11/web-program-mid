@@ -148,7 +148,7 @@ section{
     overflow: hidden;
 }
 .info{
-    transform: translateY(125px);
+    transform: translateY(120px);
     transition: 0.5s;
 }
 .info:hover{
@@ -166,8 +166,8 @@ section{
 }
 section .fa{
     font-size: 22px;
-    margin-left: 12px;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
 }
 /* footer */
 footer{
