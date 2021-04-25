@@ -111,22 +111,22 @@ section{
 .box::before{
     content: "";
     position: absolute;
-    border: 0.5px solid #afb7bd;
-    width: 98%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: -2px;
-}
-.box::after{
-    content: "";
-    position: absolute;
-    border: 0.5px solid #afb7bd;
+    border: 0.3px solid #afb7bd;
     width: 95%;
     left: 0;
     right: 0;
     margin: auto;
-    top: -4px;
+    top: -3px;
+}
+.box::after{
+    content: "";
+    position: absolute;
+    border: 0.3px solid #afb7bd;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -6px;
 }
 .img{
     position: absolute;
