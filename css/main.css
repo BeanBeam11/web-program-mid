@@ -74,6 +74,11 @@ header .name{
 header .user-info{
     margin-left: 20px;
 }
+header .btn{
+    color: #fff;
+    border: 1.5px solid #fff;
+    margin-bottom: 10px;
+}
 
 /* aside */
 aside{
