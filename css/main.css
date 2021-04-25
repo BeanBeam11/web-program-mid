@@ -239,6 +239,7 @@ footer .fa{
     margin-top: 290px;
     font-size: 16px;
     text-align: center;
+    cursor: pointer;
 }
 .album-autor-img{
     position: absolute;
@@ -252,6 +253,7 @@ footer .fa{
     font-size: 16px;
     background-image: url('https://i1.wp.com/mrlifeday.com/wp-content/uploads/2020/12/03-taylor-swift-press-cr-Beth-Garrabrant-2020-billboard-1548-1607617377-compressed.jpg');
     background-size: cover;
+    cursor: pointer;
 }
 .album-author-name{
     position: absolute;
@@ -262,6 +264,7 @@ footer .fa{
     margin-top: 410px;
     font-size: 14px;
     text-align: center;
+    cursor: pointer;
 }
 .img-photo{
     position: relative;
@@ -300,4 +303,5 @@ footer .fa{
 .photo-info .fa{
     font-size: 14px;
     margin-left: 10px;
+    cursor: pointer;
 }
