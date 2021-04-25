@@ -37,9 +37,11 @@
 }
 .nav1 .navbar-nav .nav-item-1:hover .dropdown-menu{
     display: block;
+    font-size: 14px;
 }
 .nav1 .navbar-nav .nav-item-2:hover .dropdown-menu{
     display: block;
+    font-size: 14px;
 }
 .nav1 .navbar-nav .nav-item .dropdown-menu::after{
     content: "";
@@ -66,13 +68,18 @@ header .row{
 header .img-user{
     width: 100px;
     margin: 0 15px 0 0;
+    cursor: pointer;
 }
 header .name{
     font-size: 36px;
     margin-left: 20px;
+    cursor: pointer;
 }
 header .user-info{
     margin-left: 20px;
+}
+header .user-info-gift{
+    cursor: pointer;
 }
 header .btn{
     color: #fff;
@@ -88,7 +95,6 @@ aside{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
 }
 aside .nav-item .nav-link{
     color: #000;
@@ -109,6 +115,15 @@ aside .nav-item .active{
 /* section */
 section{
     min-height: 60vh;
+    background-color: #f3f5f6;
+}
+.view-fav{
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    text-align: right;
+    font-size: 14px;
+    color: #737b80;
 }
 .box{
     height: 200px;
@@ -209,7 +224,7 @@ footer .fa{
     height: 500px;
     background-image: url('https://i1.wp.com/mrlifeday.com/wp-content/uploads/2020/12/03-taylor-swift-press-cr-Beth-Garrabrant-2020-billboard-1548-1607617377-compressed.jpg');
     background-size: cover;
-    margin: 5px;
+    margin: 0 5px 5px 5px;
     color: #fff;
 }
 .box-black{
@@ -254,7 +269,7 @@ footer .fa{
     right: 0;
     left: 0;
     margin: auto;
-    margin-top: 250px;
+    margin-top: 255px;
     font-size: 14px;
     text-align: center;
 }
@@ -264,7 +279,7 @@ footer .fa{
     right: 0;
     left: 0;
     margin: auto;
-    margin-top: 290px;
+    margin-top: 280px;
     font-size: 16px;
     text-align: center;
     cursor: pointer;

@@ -17,6 +17,7 @@ function readFromServer(){
     $.get(serverURL, function(data) {
         console.log(data);
         init(data);
+        $('section').css('background-color','#fff');
     });
 }
 
@@ -61,8 +62,6 @@ function init(data){
         $('.' + img_photo_NUM + ' .photo-author').html(data[urlNUM].images[i].author);
         $('.' + img_photo_NUM + ' .photo-like-num').html('<i class="fa fa-star-o" aria-hidden="true"></i> ' + data[urlNUM].images[i].likeNum);
         $('.' + img_photo_NUM + ' .photo-comment-num').html('<i class="fa fa-comment-o" aria-hidden="true"></i> ' + data[urlNUM].images[i].commentNum);
-
-        
     }
 }
 
