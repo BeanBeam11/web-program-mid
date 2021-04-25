@@ -147,6 +147,7 @@ section{
     background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 11%, rgba(255, 255, 255, 0) 37%);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 11%, rgba(255, 255, 255, 0) 37%);
     overflow: hidden;
+    opacity: 0.8;
 }
 .info{
     transform: translateY(120px);
@@ -214,7 +215,12 @@ footer .fa{
     height: 100%;
 }
 .box-black-1{
-    opacity: 0.3;
+    opacity: 0.6;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(11%, rgba(0, 0, 0, 0.8)), color-stop(37%, rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 11%, rgba(255, 255, 255, 0) 37%);
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.8) 11%, rgba(255, 255, 255, 0) 37%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 11%, rgba(255, 255, 255, 0) 37%);
+    overflow: hidden;
 }
 .album-name{
     position: absolute;
@@ -311,7 +317,7 @@ footer .fa{
 .photo-info{
     position: absolute;
     width: calc(100% - 20px);
-    margin-top: 465px;
+    margin-top: 458px;
     margin-left: 10px;
 }
 .photo-author{
