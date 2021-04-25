@@ -218,6 +218,14 @@ footer .fa{
     font-size: 23px;
 }
 /* album.html */
+.nav-link1{
+    margin-left: auto;
+    padding: 16px 16px;
+}
+.nav-link1 .fa{
+    margin-left: 10px;
+    cursor: pointer;
+}
 .img-cover{
     position: relative;
     width: calc(100% - 10px);
