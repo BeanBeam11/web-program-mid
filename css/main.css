@@ -283,7 +283,7 @@ footer .fa{
 }
 .photo-title{
     position: absolute;
-    width: 80%;
+    width: calc(100% - 20px);
     margin-top: 440px;
     margin-left: 10px;
     font-size: 16px;
