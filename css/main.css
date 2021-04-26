@@ -102,8 +102,11 @@ aside .nav-item .nav-link{
     padding: 12px 20px;
     margin-right: 10px;
 }
-aside .nav-item .nav-link:hover{
+aside .nav-item .nav-link1:hover{
     border-bottom: 3px solid #0090DC;
+    font-weight: 700;
+}
+aside .nav-item .nav-link:hover{
     font-weight: 700;
 }
 aside .nav-item .active{
