@@ -100,8 +100,10 @@ aside .nav-item .nav-link{
     color: #000;
     height: 50px;
     padding: 12px 20px;
+    margin-right: 10px;
 }
 aside .nav-item .nav-link:hover{
+    border-bottom: 3px solid #0090DC;
     font-weight: 700;
 }
 aside .nav-item .active{
